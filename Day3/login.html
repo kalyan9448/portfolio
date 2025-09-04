@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: url("./assets/ChatGPT\ Image\ Sep\ 3\,\ 2025\,\ 05_50_48\ PM.png") center/cover no-repeat; /* background image */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Glassmorphism Login Container */
+    .login-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(114, 100, 100, 0.365);
+      padding: 2.5rem;
+      width: 350px;
+      text-align: center;
+      color: #fffaf7e3;
+    }
+
+    /* Avatar */
+    .login-box .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #38bdf8;
+    }
+
+    /* Heading */
+    .login-box h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #c59292;
+    }
+
+    /* Inputs */
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.7rem 0;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.25);
+      color: #fff;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .login-box input:focus {
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+      outline: none;
+    }
+
+    /* Button */
+    .login-box input[type="submit"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #0f172a;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(56, 189, 248, 0.7);
+    }
+
+    /* Links */
+    .login-box a {
+      display: block;
+      margin-top: 1rem;
+      color: #ddd;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  </style>
+
+  <script>
+    function validateLogin(event) {
+      event.preventDefault();
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      if (username === "teja" && password === "1234") {
+        window.location.href = "index.html"; // Redirect to portfolio
+      } else {
+        alert("Invalid Username or Password!");
+      }
+    }
+    
+    function validateLogin(event) {
+      event.preventDefault(); // stop form from submitting
+
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      if (username === "teja" && password === "0000") {
+        window.location.href = "index.html"; 
+      } 
+      
+      else {
+        alert("Invalid Username or Password!");
+      }
+    }
+
+  </script>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="./assets/ChatGPT Image Sep 3, 2025, 05_54_15 PM.png" alt="User Avatar" class="avatar">
+    <h2>Login</h2>
+    <form onsubmit="validateLogin(event)">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" placeholder="Username" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+    <a href="#">Forgot Password?</a>
+  </div>
+
+</body>
+</html>

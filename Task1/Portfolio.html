@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalyan Teja | Portfolio</title>
+<link rel="stylesheet" href="./Portfolio.css">
+   <script src="./Portfolio.css"></script> 
+   <script>
+    document.querySelector(".logout-btn").addEventListener("click", function(event) {
+  event.preventDefault();
+  if (confirm("Are you sure you want to logout?")) {
+    window.location.href = "login.html"; // Redirect to login
+  }
+});
+
+   </script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+ <header class="hero">
+  <div class="hero-content">
+    <!-- Left Side: Photo -->
+   <div class="hero-image">
+  <img src="./assets/KALYANteja.jpg" alt="Kalyan Teja">
+</div>
+<div class="hero-text">
+  <h1>Hello, I'm <span>Kalyan Teja</span></h1>
+  <p>
+    Web Developer | Java Programmer | AI Trainee | Tech Enthusiast  
+  </p>
+  <p>
+    I specialize in building responsive, user-friendly applications and I’m currently expanding my skills in <b>Artificial Intelligence</b> and <b>workflow automation</b>.
+  </p>
+  <a href="#projects" class="btn">Explore My Projects</a>
+</div>
+
+  </div>
+  <script>
+  function toggleMenu() {
+    document.querySelector(".navbar ul").classList.toggle("show");
+  }
+</script>
+
+</header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About -->
+ <section id="about" class="section about">
+  <div class="section-content">
+      <h2>👤 About Me</h2>
+      <div class="about-card">
+    <p>
+  I’m a passionate <b>Web Developer</b> and <b>Java Programmer</b> with a strong focus on building responsive, efficient, and user-friendly applications.  
+    </p>
+    </div>
+   </div>
+  </section>
+
+
+  <!-- Skills Section -->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+
+    <!-- Skill Group -->
+    <div class="skill-group">
+      <h4>Programming</h4>
+      <div class="skills-list">
+        <span class="skill-chip">💻 Java <span class="lvl">Core, OOP, Eclipse</span></span>
+        <span class="skill-chip">🗄️ SQL <span class="lvl">Queries, Procedures, Triggers</span></span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Web</h4>
+      <div class="skills-list">
+        <span class="skill-chip">🌐 HTML</span>
+        <span class="skill-chip">🎨 CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Other</h4>
+      <div class="skills-list">
+        <span class="skill-chip">🧩 Problem Solving</span>
+        <span class="skill-chip">💡 Thinking</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <article class="project-card">
+      <h3 class="project-title">🚗 Car Rental System</h3>
+      <div class="project-meta">
+        <span class="badge">Java</span>
+        <span class="badge">SQL</span>
+      </div>
+      <img src="./assets/car-rental image.jpeg" alt="Car Rental Project" class="project-img">
+      <p class="project-desc">
+        Online booking platform for car rentals with database integration.
+        Provides a simple and user-friendly experience for customers.
+      </p>
+      <ul class="project-bullets">
+        <li>Integrated SQL database for booking and tracking</li>
+        <li>Implemented Java-based OOP design</li>
+      </ul>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <h3 class="project-title">🖼️ Image Forgery Detection</h3>
+      <div class="project-meta">
+        <span class="badge">Python</span>
+        <span class="badge">Algorithms</span>
+      </div>
+      <img src="./assets/image forge.jpeg" alt="Image Forgery Detection" class="project-img">
+      <p class="project-desc">
+        System to detect manipulated digital images using lightweight algorithms.
+      </p>
+      <ul class="project-bullets">
+        <li>Implemented detection techniques for tampered regions</li>
+        <li>Optimized for lightweight execution</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- 
+  <!-- Skills Section -->
+  <!-- <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="card">💻 Java (Core, OOP, Eclipse)</div>
+      <div class="card">🗄️ SQL (queries, procedures, triggers)</div>
+      <div class="card">🌐 Web (HTML, CSS)</div>
+      <div class="card">🧩 Problem Solving</div>
+      <div class="card">Thinking</div>
+    </div> -->
+  </section>
+
+  <!-- Projects Section -->
+  <!-- <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card project-card">
+        <h3>🚗 Car Rental System</h3>
+        <img src="./assets/car-rental image.jpeg" alt="CAR RENTAL">
+        <p>Online booking platform for car rentals with database integration. while booking customers easily and user friendly</p>
+      </div>
+      <div class="card project-card">
+        <h3>🖼️ Image Forgery Detection</h3>
+        <img src="./assets/image forge.jpeg" alt="">
+        <p>System to detect manipulated digital images using lightweight algorithms.</p>
+      </div>
+    </div>
+  </section> --> -->
+
+  <!-- Education Section
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2019 - 2025</span>
+        <p><b>B.Tech (IT)</b> - Bharat Institute of Engineering & Technology | CGPA: 6.33</p>
+      </div>
+      <div class="timeline-item">
+        <span>2017 - 2019</span>
+        <p><b>Intermediate (MPC)</b> - Gouthami Junior College | 75%</p>
+      </div>
+      <div class="timeline-item">
+        <span>2016 - 2017</span>
+        <p><b>SSC</b> - Z.P.H High School | CGPA: 7.8</p>
+      </div>
+    </div>
+  </section> -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+
+  <section id="education" class="section education">
+  <div class="section-content">
+    <h2>🎓 Education</h2>
+    <div class="edu-item" onclick="toggleDetails(this)">
+      <h3>B.Tech (IT) – BIET (2019–2025)</h3>
+      <p class="short">CGPA: 6.33</p>
+      <p class="details">Studied core Computer Science and IT concepts including Java, SQL, Web Technologies, and Software Engineering.</p>
+    </div>
+    <div class="edu-item" onclick="toggleDetails(this)">
+      <h3>Intermediate (MPC) – Gouthami Jr. College (2017–2019)</h3>
+      <p class="short">Percentage: 75%</p>
+      <p class="details">Focused on Mathematics, Physics, and Chemistry with strong analytical and problem-solving foundation.</p>
+    </div>
+    <div class="edu-item" onclick="toggleDetails(this)">
+      <h3>SSC – Z.P.H High School (2016–2017)</h3>
+      <p class="short">CGPA: 7.8</p>
+      <p class="details">Completed foundational education with emphasis on Science, Mathematics, and Languages.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <footer>
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:kalyantej255@gmail.com">kalyantej255@gmail.com</a> | 📱 +91 9963979448</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/kalyanteja-54a474359" target="_blank">LinkedIn</a></p>
+  </footer>
+
+ <a href="login.html" class="logout-btn">Logout</a>
+
+
+</body>
+</html>
