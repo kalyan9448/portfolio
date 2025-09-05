@@ -386,5 +386,24 @@ box-shadow: 0 14px 10px rgba(167, 8, 8, 0.477) ;
   font-size: 1rem;
   color: #222;
 }
+.logout-btn {
+  position: fixed;
+  top: 8px;
+  right: 20px;
+  background: #e11d48;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s;
+  z-index: 2000;
+}
+
+.logout-btn:hover {
+  background: #be123c;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(225, 29, 72, 0.7);
+}
 
 
